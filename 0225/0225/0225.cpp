@@ -1,23 +1,47 @@
 ﻿#include <iostream>
-#include <string.h>
 #include <stdlib.h>
-#pragma warning(disable:4996)
-
 using namespace std;
 
-char* MakeStrAdr(int len) {
-	char* str = (char*)malloc(sizeof(char) * len);
-	return str;
-}
+class Simple {
+public: 
+	Simple() {
+		cout << "I'm simple constructr!" << endl;
+	}
+};
 
 int main() {
-	char* str = MakeStrAdr(20);
-	strcpy(str, "I am so happy ~");
-	cout << str << endl;
-	free(str);
+	cout << "case 1: ";
+	Simple* sp1 = new Simple;
 
+	cout << "case 2: ";
+	Simple* sp2 = (Simple*)malloc(sizeof(Simple) * 1);
+
+	cout << endl << "end of main" << endl;
+	delete sp1;
+	free(sp2);
 	return 0;
 }
+
+//#include <iostream>
+//#include <string.h>
+//#include <stdlib.h>
+//#pragma warning(disable:4996)
+//using namespace std;
+//
+//char* MakeStrAdr(int len) {
+//	// char* str = (char*)malloc(sizeof(char) * len);
+//	char* str = new char[len];
+//	return str;
+//}
+//
+//int main() {
+//	char* str = MakeStrAdr(20);
+//	strcpy(str, "I am so happy ~");
+//	cout << str << endl;
+//	// free(str);
+//	delete[]str;
+//	return 0;
+//}
 
 //#include <iostream>
 //using namespace std;
