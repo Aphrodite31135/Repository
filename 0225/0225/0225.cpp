@@ -1,26 +1,60 @@
 ﻿#include <iostream>
-#include <stdlib.h>
 using namespace std;
 
-class Simple {
-public: 
-	Simple() {
-		cout << "I'm simple constructr!" << endl;
-	}
-};
+typedef struct __Point {
+	int xpos;
+	int ypos;
+}Point;
+
+Point& PntAdder(const Point& p1, const Point& p2) {
+	Point* p = new Point;
+
+	p->xpos = p1.xpos + p2.xpos;
+	p->ypos = p1.ypos + p2.ypos;
+
+	return *p;
+}
 
 int main() {
-	cout << "case 1: ";
-	Simple* sp1 = new Simple;
+	Point* dot1 = new Point;
+	Point* dot2 = new Point;
 
-	cout << "case 2: ";
-	Simple* sp2 = (Simple*)malloc(sizeof(Simple) * 1);
+	cin >> dot1->xpos >> dot1->ypos;
+	cin >> dot2->xpos >> dot2->ypos;
 
-	cout << endl << "end of main" << endl;
-	delete sp1;
-	free(sp2);
+	Point& dot_result = PntAdder(*dot1, *dot2);
+
+	delete dot1;
+	delete dot2;
+
+	cout << "두 점의 합 : " << dot_result.xpos << ", " << dot_result.ypos << endl;
+	
 	return 0;
 }
+
+//#include <iostream>
+//#include <stdlib.h>
+//using namespace std;
+//
+//class Simple {
+//public: 
+//	Simple() {
+//		cout << "I'm simple constructr!" << endl;
+//	}
+//};
+//
+//int main() {
+//	cout << "case 1: ";
+//	Simple* sp1 = new Simple;
+//
+//	cout << "case 2: ";
+//	Simple* sp2 = (Simple*)malloc(sizeof(Simple) * 1);
+//
+//	cout << endl << "end of main" << endl;
+//	delete sp1;
+//	free(sp2);
+//	return 0;
+//}
 
 //#include <iostream>
 //#include <string.h>
