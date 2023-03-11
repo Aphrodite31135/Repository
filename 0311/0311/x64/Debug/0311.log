@@ -1,0 +1,6 @@
+﻿  Printer_Main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(702,5): error MSB6006: "CL.exe"이(가) 종료되었습니다(코드: 2).
+C:\Users\bit\Desktop\GIT\Repository\0311\0311\Printer_Main.cpp(7,30): error C2664: 'void Printer::SetString(std::string &)': 인수 1을(를) 'const char [13]'에서 'std::string &'(으)로 변환할 수 없습니다.
+C:\Users\bit\Desktop\GIT\Repository\0311\0311\Printer.h(16,22): message : 'Printer::SetString' 선언을 참조하십시오.
+C:\Users\bit\Desktop\GIT\Repository\0311\0311\Printer_Main.cpp(10,28): error C2664: 'void Printer::SetString(std::string &)': 인수 1을(를) 'const char [11]'에서 'std::string &'(으)로 변환할 수 없습니다.
+C:\Users\bit\Desktop\GIT\Repository\0311\0311\Printer.h(16,22): message : 'Printer::SetString' 선언을 참조하십시오.
