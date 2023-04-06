@@ -7,13 +7,13 @@
 #    print(element)
 
 #while True :
-#    guess = int(input("¾ÏÈ£ ÀÔ·Â: "))
+#    guess = int(input("ì•”í˜¸ ì…ë ¥: "))
 #    if(guess == password) :
-#        print("¾ÏÈ£ ÀÏÄ¡")
+#        print("ì•”í˜¸ ì¼ì¹˜")
 #        break
 #    else :
-#        print("¾ÏÈ£ ºÒÀÏÄ¡")
-#print("ÇÁ·Î±×·¥ Á¾·á")
+#        print("ì•”í˜¸ ë¶ˆì¼ì¹˜")
+#print("í”„ë¡œê·¸ë¨ ì¢…ë£Œ")
 
 # coding = utf-8
 
@@ -22,8 +22,6 @@
 #print(sys.getdefaultencoding())
 #print(sys.getfilesystemencoding())    
 
--*- coding: utf-8 -*-
-
 def plus_one(n) :
     print(f"n is not {n} anymore.")
     n+=1
@@ -31,7 +29,7 @@ def plus_one(n) :
     return n
 
 def main() :
-    i=int(input("ÀÔ·Â: "))
-    print("output:", plus_one(i))
+    i=int(input("ì…ë ¥: "))
+    print("ì¶œë ¥:", plus_one(i))
 
 main()
