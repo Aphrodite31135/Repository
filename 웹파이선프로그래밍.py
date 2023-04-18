@@ -1,19 +1,31 @@
-'''연속되는 글자 찾기'''
-def has_consecutive_letter(strin) -> list :
-    pre_letter=""
-    for letter in strin :
-        if str(letter) == str(pre_letter) :
-            return True
-        else :
-            pre_letter=letter
-            continue
-    return False
-print(has_consecutive_letter("apple"))
-print(has_consecutive_letter("mommy"))
-print(has_consecutive_letter("happy"))
-print(has_consecutive_letter("kiss"))
-print(has_consecutive_letter("python"))
-print(has_consecutive_letter("sangkeunpark"))
+# '''소수 판단하기'''
+# curnm=2
+# def is_prime_number(nm) -> int :
+#     if(curnm<5)
+
+# '''대리 출석자 찾아내기'''
+# def get_bad_students(std_in_system, std_in_room) :
+#     return std_in_system-std_in_room
+# print(get_bad_students({1234, 2345, 3456, 4567}, {1234, 2345, 3456}))
+# print(get_bad_students({1234, 1235, 1236, 1237}, {1234, 1235, 1236, 1237}))
+# print(get_bad_students({1111, 2222, 3333, 4444, 5555}, {1111, 2222, 3333}))
+
+# '''연속되는 글자 찾기'''
+# def has_consecutive_letter(strin) -> list :
+#     pre_letter=""
+#     for letter in strin :
+#         if str(letter) == str(pre_letter) :
+#             return True
+#         else :
+#             pre_letter=letter
+#             continue
+#     return False
+# print(has_consecutive_letter("apple"))
+# print(has_consecutive_letter("mommy"))
+# print(has_consecutive_letter("happy"))
+# print(has_consecutive_letter("kiss"))
+# print(has_consecutive_letter("python"))
+# print(has_consecutive_letter("sangkeunpark"))
 
 # '''수 세기'''
 # input_str="ajkdlfjlkadjfdklfjk124u34jkdljflkdjfl43223jkldjfkldjkl12j1l0044jkldjklf1812j1k2jlkdjklfjdf8333jk4ljkldjflkd893jkldjfkldjf8922823jk2l3jkljdklfjdlfd9823232j32jdjflkdjf9823"
