@@ -1,33 +1,21 @@
-# '''소수 판단하기'''
-# curnm=2
-# def is_prime_number(nm) -> int :
-#     if(curnm<5)
+''' 연속되는 글자 찾기 '''
+def has_consecutive_letter(strin) -> list :
+    pre_letter=""
+    for letter in strin :
+        if str(letter) == str(pre_letter) :
+            return True
+        else :
+            pre_letter=letter
+            continue
+    return False
+print(has_consecutive_letter("apple"))
+print(has_consecutive_letter("mommy"))
+print(has_consecutive_letter("happy"))
+print(has_consecutive_letter("kiss"))
+print(has_consecutive_letter("python"))
+print(has_consecutive_letter("sangkeunpark"))
 
-# '''대리 출석자 찾아내기'''
-# def get_bad_students(std_in_system, std_in_room) :
-#     return std_in_system-std_in_room
-# print(get_bad_students({1234, 2345, 3456, 4567}, {1234, 2345, 3456}))
-# print(get_bad_students({1234, 1235, 1236, 1237}, {1234, 1235, 1236, 1237}))
-# print(get_bad_students({1111, 2222, 3333, 4444, 5555}, {1111, 2222, 3333}))
-
-# '''연속되는 글자 찾기'''
-# def has_consecutive_letter(strin) -> list :
-#     pre_letter=""
-#     for letter in strin :
-#         if str(letter) == str(pre_letter) :
-#             return True
-#         else :
-#             pre_letter=letter
-#             continue
-#     return False
-# print(has_consecutive_letter("apple"))
-# print(has_consecutive_letter("mommy"))
-# print(has_consecutive_letter("happy"))
-# print(has_consecutive_letter("kiss"))
-# print(has_consecutive_letter("python"))
-# print(has_consecutive_letter("sangkeunpark"))
-
-# '''수 세기'''
+''' 수 세기 '''
 # input_str="ajkdlfjlkadjfdklfjk124u34jkdljflkdjfl43223jkldjfkldjkl12j1l0044jkldjklf1812j1k2jlkdjklfjdf8333jk4ljkldjflkd893jkldjfkldjf8922823jk2l3jkljdklfjdlfd9823232j32jdjflkdjf9823"
 # strin=list(input_str)
 # stri = ""
@@ -50,7 +38,7 @@
 # print(count)
 
 
-# '''배수 찾기'''
+''' 배수 찾기 '''
 # def get_multiples(nm1, nm2) :
 #     count=0
 #     for nm in range(1,101,1) : 
@@ -64,7 +52,7 @@
 # print(get_multiples(2, 3))
 
 
-# '''베스트셀러 찾기''' # 다시 해보기
+''' 베스트셀러 찾기 ''' # 다시 해보기
 # def get_best_seller(best_seller) :
 #     sale={}
 #     for items in best_seller :
@@ -81,7 +69,7 @@
 # print(get_best_seller(("laptop", "phone", "phone", "phone", "laptop")))
 
 
-# '''출석부에서 중복 학생 제거'''
+''' 출석부에서 중복 학생 제거 '''
 # def get_unique_students(students) -> list:
 #     std_set=set()
 #     for nm in students :
@@ -93,7 +81,7 @@
 # print(get_unique_students(("lee",)))
 # print(get_unique_students(("kim", "KIM", "Oh", "Park", "lee")))
 
-# '''숫자 세기'''
+''' 숫자 세기 '''
 # strin="ajkdlfjlkadjfdklfjk124u34jkdljflkdjfl43223jkldjfkldjkl12j1l0044jkldjklf1812j1k2jlkdjklfjdf8333jk4ljkldjflkd893jkldjfkldjf8922823jk2l3jkljdklfjdlfd9823232j32jdjflkdjf9823"
 # count=0
 # for nm in strin :
@@ -101,7 +89,7 @@
 #         count+=int(nm)
 # print(f"결과: {count}")
 
-# '''3 또는 5의 배수'''
+''' 3 또는 5의 배수 '''
 # count=0
 # for nm in range(1,1000) :
 #     if nm%3 != 0 :
@@ -111,7 +99,7 @@
 #         count+=nm
 # print(f"결과: {count}")
 
-# '''성 이름 붙여쓰기'''
+''' 성 이름 붙여쓰기 '''
 # def function1(strin) :
 #     a=""
 #     for i in strin :

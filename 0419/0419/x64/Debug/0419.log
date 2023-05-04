@@ -1,0 +1,3 @@
+﻿  기본 자료형과 형변환.cpp
+C:\Users\hurry\OneDrive\바탕 화면\GitHub\Repository\0419\0419\기본 자료형과 형변환.cpp(15,17): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  0419.vcxproj -> C:\Users\hurry\OneDrive\바탕 화면\GitHub\Repository\0419\x64\Debug\0419.exe
