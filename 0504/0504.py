@@ -10,7 +10,7 @@ class Student :
     def AddGrade() :
         grade+=1
     def AddScore(myscore:float) :
-        score += myscore
+        score+=myscore
 
 student = Student("홍길동","2024105000", "Software")
 print(student.name)
