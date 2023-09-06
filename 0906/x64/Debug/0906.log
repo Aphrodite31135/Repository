@@ -1,0 +1,4 @@
+﻿  0906.cpp
+C:\Users\MacBook Pro 13\OneDrive - 경희대학교\바탕 화면\GitHub\Repository\0906\0906.cpp(8,21): warning C4305: '=': '__int64'에서 'int'(으)로 잘립니다.
+C:\Users\MacBook Pro 13\OneDrive - 경희대학교\바탕 화면\GitHub\Repository\0906\0906.cpp(8,21): warning C4309: '=': 상수 값이 잘립니다.
+  0906.vcxproj -> C:\Users\MacBook Pro 13\OneDrive - 경희대학교\바탕 화면\GitHub\Repository\0906\x64\Debug\0906.exe
