@@ -1,2 +1,3 @@
 ﻿  main.cpp
+C:\Users\MacBook Pro 13\OneDrive - 경희대학교\바탕 화면\GitHub\Repository\0913\main.cpp(3,12): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
   0913.vcxproj -> C:\Users\MacBook Pro 13\OneDrive - 경희대학교\바탕 화면\GitHub\Repository\0913\x64\Debug\0913.exe

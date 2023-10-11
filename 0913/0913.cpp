@@ -1,11 +1,17 @@
 #include <iostream>
-
 int main() {
-	auto count = 0;
-	auto ch = 'Z';
-	auto limit = 100.0;
-	std::cout << typeid(count).name() << typeid(ch).name() << typeid(limit).name();
+	double num = 1.25e-12;
+	std::cout << num;
 }
+
+//#include <iostream>
+//
+//int main() {
+//	auto count = 0;
+//	auto ch = 'Z';
+//	auto limit = 100.0;
+//	std::cout << typeid(count).name() << typeid(ch).name() << typeid(limit).name();
+//}
 
 //int main() {
 //	enum class Animal {qw, we, er, rt, ty};
