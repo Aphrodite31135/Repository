@@ -1,19 +1,19 @@
 ﻿/* vector & array #2 */
-#include <iostream>
-#include <vector>
-#include <array>
-using namespace std;
-int main() {
-	vector<int> vec = { 10, 20, 30 };
-	cout << *vec.begin() << endl;		// 10
-	cout << *(vec.end() - 1) << endl;	// 30
-	int* cursor = &vec[0];
-	int* end = &vec[0] + vec.size();
-	while (cursor != end) {
-		std::cout << *cursor << ' ';
-		cursor++;
-	}
-}
+//#include <iostream>
+//#include <vector>
+//#include <array>
+//using namespace std;
+//int main() {
+//	vector<int> vec = { 10, 20, 30 };
+//	cout << *vec.begin() << endl;		// 10
+//	cout << *(vec.end() - 1) << endl;	// 30
+//	int* cursor = &vec[0];
+//	int* end = &vec[0] + vec.size();
+//	while (cursor != end) {
+//		std::cout << *cursor << ' ';
+//		cursor++;
+//	}
+//}
 
 /* vector & array #1 */
 //#include <iostream>
