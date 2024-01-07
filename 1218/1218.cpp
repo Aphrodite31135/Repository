@@ -1,4 +1,7 @@
-﻿/* 정답 */
+﻿/* 0107 */
+
+
+/* 정답 */
 /////*             Object-Oriented Programming, Midterm exam (2023-1, CSE103-02)                       */
 ////// Write your answers in Korean or English(답안은 한국어 또는 영어로 작성하시오).
 ////#include <iostream>
@@ -129,6 +132,7 @@
 //	S(int x = 0, int y = 0) : x(x), y(y) {}
 //	virtual int Get() { return this->x * this->y; }
 //};
+
 /* 7-1 */
 //template<typename T>
 //T Sum(const std::vector<T> v) {
