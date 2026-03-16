@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\UnsortedType.h.obj",
+            "outputs": [
+                "C:\\Users\\USER\\OneDrive\\바탕 화면\\GitHub\\Repository\\260316\\260316\\x64\\Debug\\vc145.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\USER\\OneDrive\\바탕 화면\\GitHub\\Repository\\260316\\260316\\x64\\Debug\\UnsortedType.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "UnsortedType.h",
+                    "source-path": "c:\\users\\user\\onedrive\\바탕 화면\\github\\repository\\260316\\260316\\unsortedtype.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

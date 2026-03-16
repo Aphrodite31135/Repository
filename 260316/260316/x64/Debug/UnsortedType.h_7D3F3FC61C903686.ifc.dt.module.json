@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\UnsortedType.obj",
+            "outputs": [
+                "x64\\Debug\\UnsortedType.h_7D3F3FC61C903686.ifc.dt.module.json",
+                "x64\\Debug\\UnsortedType.h_7D3F3FC61C903686.ifc.dt.d.json",
+                "x64\\Debug\\UnsortedType.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Users\\USER\\OneDrive\\바탕 화면\\GitHub\\Repository\\260316\\260316\\UnsortedType.h",
+                    "source-path": "c:\\users\\user\\onedrive\\바탕 화면\\github\\repository\\260316\\260316\\unsortedtype.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
