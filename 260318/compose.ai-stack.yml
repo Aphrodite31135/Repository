@@ -1,0 +1,37 @@
+services:
+  ollama-main:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    ports:
+      - "11436:11434"
+    environment:
+      CUDA_VISIBLE_DEVICES: "0,1"
+      NVIDIA_VISIBLE_DEVICES: "0,1"
+    volumes:
+      - ollama-main:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["0", "1"]
+              capabilities: ["gpu"]
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    restart: unless-stopped
+    depends_on:
+      - ollama-main
+    ports:
+      - "3000:8080"
+    environment:
+      ENABLE_OLLAMA_API: "true"
+      OLLAMA_BASE_URL: "http://ollama-main:11434"
+      ENABLE_OPENAI_API: "false"
+      USE_OLLAMA_DOCKER: "false"
+    volumes:
+      - open-webui:/app/backend/data
+
+volumes:
+  ollama-main:
+  open-webui:
