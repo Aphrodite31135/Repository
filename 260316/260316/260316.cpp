@@ -77,9 +77,37 @@
 //}
 
 /* 2666 */
+// top-down DP (recursive)
 #include <bits/stdc++.h>
 using namespace std;
+int MAX_NUM = -1;
+long long func(int w, int h);
+long long dp[31][31];
 int main() {
-
+	memset(dp, -1, sizeof(dp));
+	vector<int> lst;
+	while (true) {
+		int i = 0;
+		cin >> i;
+		if (i != 0) {
+			lst.push_back(i);
+			if (i > MAX_NUM) MAX_NUM = i;
+		}
+		else break; // if (i == 0)
+	}
+	func(MAX_NUM, 1);
+	for (auto it = lst.begin(); it != lst.end(); it++) cout << dp[*it][0] << endl;
 	return 0;
+}
+long long func(int w, int h) {
+	if (w == 0 && h == 0) return 1;
+	if (dp[w][h] != -1) return dp[w][h];
+	long long ret = 0;
+	if (h >= 1) {
+		if (w >= 1) ret += func(w, h - 1) + func(w - 1, h + 1);
+		else ret += func(w, h - 1);
+	}
+	else
+		ret += func(w - 1, h + 1);
+	return dp[w][h] = ret;
 }
